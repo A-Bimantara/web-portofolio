@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adithya Bimantara — Portofolio Web Developer</title>
+<meta name="description" content="Portofolio pribadi Adithya Bimantara, Mahasiswa &amp; Web Developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<header class="navbar">
+  <div class="navbar__inner">
+    <a href="#beranda" class="logo">
+      <span class="logo__cursor">_</span>adithya<span class="logo__dim">.dev</span>
+    </a>
+
+    <label for="nav-toggle" class="hamburger" aria-label="Buka menu navigasi">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-links">
+      <a href="#beranda">01 · Beranda</a>
+      <a href="#profil">02 · Profil</a>
+      <a href="#proyek">03 · Proyek</a>
+      <a href="#kontak">04 · Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ 1. BERANDA / HERO ============ -->
+  <section id="beranda" class="section hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <p class="eyebrow"><span class="dot dot--pass"></span>STATUS: TERSEDIA UNTUK PROYEK BARU</p>
+      <h1 class="hero__title">
+        Selamat datang, saya<br>
+        <span class="hero__name">Adithya Bimantara</span>
+      </h1>
+      <p class="hero__role">Mahasiswa Informatika &amp; Web Developer</p>
+      <p class="hero__desc">
+        Saya membangun antarmuka web yang rapi, cepat, dan teruji baik —
+        memadukan ketelitian seorang penguji perangkat lunak dengan kepekaan
+        seorang perancang antarmuka.
+      </p>
+      <div class="hero__cta">
+        <a href="#proyek" class="btn btn--primary">Lihat Portofolio</a>
+        <a href="#kontak" class="btn btn--ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <a href="#profil" class="scroll-hint" aria-label="Gulir ke bagian Profil">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ 2. PROFIL / ABOUT ============ -->
+  <section id="profil" class="section section--light">
+    <div class="container">
+      <p class="section__eyebrow">02 · Profil</p>
+      <h2 class="section__title">Tentang Saya</h2>
+
+      <div class="about">
+        <div class="about__photo-wrap">
+          <img src="foto-profil.jpg" alt="Foto profil Adithya Bimantara" class="about__photo">
+          <div class="about__photo-initials">
+          </div>
+          <p class="about__photo-caption">foto-profil.jpg</p>
+        </div>
+
+        <div class="about__content">
+          <p class="about__text">
+            Saya mahasiswa Teknik Informatika semester akhir dengan minat besar
+            pada pengembangan web dan pengujian perangkat lunak (software
+            testing). Bagi saya, kode yang baik bukan hanya kode yang berjalan,
+            tetapi kode yang teruji, konsisten, dan mudah dirawat.
+          </p>
+
+          <div class="about__block">
+            <h3 class="about__subtitle">Pendidikan</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline__year">2022 — Sekarang</span>
+                <span class="timeline__detail">S1 Teknik Informatika, Universitas Nusantara</span>
+              </li>
+              <li>
+                <span class="timeline__year">2019 — 2022</span>
+                <span class="timeline__detail">SMK Jurusan Rekayasa Perangkat Lunak</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about__block">
+            <h3 class="about__subtitle">Keahlian &amp; Tech Stack</h3>
+            <ul class="badge-list">
+              <li class="badge"><span class="dot dot--pass"></span>HTML5</li>
+              <li class="badge"><span class="dot dot--pass"></span>CSS3</li>
+              <li class="badge"><span class="dot dot--pass"></span>JavaScript</li>
+              <li class="badge"><span class="dot dot--pass"></span>React</li>
+              <li class="badge"><span class="dot dot--warn"></span>Node.js</li>
+              <li class="badge"><span class="dot dot--pass"></span>Git &amp; GitHub</li>
+              <li class="badge"><span class="dot dot--pass"></span>Manual &amp; Automation Testing</li>
+              <li class="badge"><span class="dot dot--warn"></span>Figma</li>
+            </ul>
+          </div>
+
+          <div class="about__block">
+            <h3 class="about__subtitle">Minat</h3>
+            <p class="about__text">
+              UI/UX yang bersih, quality assurance, aksesibilitas web, dan
+              belajar hal baru lewat proyek-proyek kecil di waktu luang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. INFORMASI UTAMA / PROYEK ============ -->
+  <section id="proyek" class="section">
+    <div class="container">
+      <p class="section__eyebrow">03 · Informasi Utama</p>
+      <h2 class="section__title">Proyek &amp; Layanan</h2>
+      <p class="section__lead">
+        Beberapa proyek yang pernah saya kerjakan, baik untuk kebutuhan kuliah,
+        latihan pribadi, maupun kolaborasi.
+      </p>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card__head">
+            <span class="card__status">PASSED</span>
+            <h3 class="card__title">Sistem Manajemen Perpustakaan</h3>
+          </div>
+          <p class="card__desc">
+            Aplikasi web untuk pencatatan peminjaman &amp; pengembalian buku
+            kampus, lengkap dengan dashboard admin dan laporan otomatis.
+          </p>
+          <ul class="tags">
+            <li class="tag">React</li>
+            <li class="tag">Node.js</li>
+            <li class="tag">MySQL</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <span class="card__status">PASSED</span>
+            <h3 class="card__title">Landing Page UMKM Lokal</h3>
+          </div>
+          <p class="card__desc">
+            Website promosi untuk usaha kuliner rumahan, fokus pada kecepatan
+            muat halaman dan tampilan yang ramah di perangkat mobile.
+          </p>
+          <ul class="tags">
+            <li class="tag">HTML5</li>
+            <li class="tag">CSS3</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <span class="card__status">IN PROGRESS</span>
+            <h3 class="card__title">Skrip Automation Testing</h3>
+          </div>
+          <p class="card__desc">
+            Kumpulan skrip pengujian otomatis untuk aplikasi web guna mendeteksi
+            regresi lebih awal sebelum rilis ke tahap produksi.
+          </p>
+          <ul class="tags">
+            <li class="tag">Selenium</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">CI/CD</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <span class="card__status">PASSED</span>
+            <h3 class="card__title">Aplikasi Catatan Pribadi</h3>
+          </div>
+          <p class="card__desc">
+            Aplikasi pencatat tugas sederhana dengan penyimpanan lokal,
+            dibangun sebagai latihan penerapan komponen React yang reusable.
+          </p>
+          <ul class="tags">
+            <li class="tag">React</li>
+            <li class="tag">CSS3</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. KONTAK ============ -->
+  <section id="kontak" class="section section--dark">
+    <div class="container">
+      <p class="section__eyebrow section__eyebrow--on-dark">04 · Kontak</p>
+      <h2 class="section__title section__title--on-dark">Mari Terhubung</h2>
+      <p class="section__lead section__lead--on-dark">
+        Punya proyek, tawaran magang, atau sekadar ingin berdiskusi seputar
+        web development &amp; software testing? Silakan kirim pesan.
+      </p>
+
+      <div class="contact">
+        <form class="contact__form" action="#" method="POST">
+          <div class="field">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Kirim Pesan</button>
+        </form>
+
+        <div class="contact__side">
+          <p class="contact__side-label">// atau hubungi langsung</p>
+          <ul class="social-list">
+            <li>
+              <a href="mailto:bimantara2499@gmail.com" class="social-link">
+                <span class="social-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+                </span>
+                <span>bimantara2499@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/A-Bimantara" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span class="social-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.7-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+                </span>
+                <span>github.com/A-Bimantara</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span class="social-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5a1.5 1.5 0 0 1 3 0V17M12 12.5V17"/></svg>
+                </span>
+                <span>linkedin.com/in/adithyabimantara</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2026 Adithya Bimantara. Dibuat dengan HTML5 &amp; CSS3.</p>
+    <a href="#beranda" class="footer__top">Kembali ke atas ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>
